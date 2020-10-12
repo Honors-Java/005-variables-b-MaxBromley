@@ -1,8 +1,26 @@
+background = 255;
+
+xPositionRect = 100;
+yPositionRect = 45; 
+diameterRect = 150;
+
+xPosition = 175;
+yPosition = 115;
+diameter = 75;
+
+
+
+
 void setup() {
 	size(500, 500);
 }
 
 void draw() {
+xPosition = xPosition + 10;
+yPosition = xPosition + 70;
+
+
+
 // Step 1: Write code that draws the following screenshots 
 // with hard-coded values. (Feel free to use colors 
 // instead of grayscale.)
@@ -16,10 +34,12 @@ void draw() {
 
 // Step 4: Make it so when the program runs the ball slides off the screen exiting at the point (500, 500)
 
-  background(255);
-  stroke(0);
+  background(background);
+   fill(150);
+  rect(xPositionRect,yPositionRect,diameterRect,diameterRect);
+  fill(255);
+  ellipse(xPosition,yPosition,diameter,diameter);
+ 
 
-
-  
 
 }
