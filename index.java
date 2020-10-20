@@ -1,23 +1,31 @@
 background = 255;
 
-xPositionRect = 100;
-yPositionRect = 45; 
-diameterRect = 150;
+int xx = (int) random(0,100);
+int yy = (int) random(0,100);
+int w = (int) random(0,100);
+int h = (int) random(0,100);
+void mousePressed(){
+  background(255)
+  fill((int) random(0, 255), (int) random(0,(int) random(0,255)),255);
+  rect(mouseX + xx, mouseX + yy, mouseX + w, mouseY + h);
 
-xPosition = 175;
-yPosition = 115;
-diameter = 75;
 
-
-
+}
 
 void setup() {
 	size(500, 500);
 }
 
 void draw() {
-xPosition = xPosition + 10;
-yPosition = xPosition + 70;
+
+ int r = (int) random(0, 255);
+  int g = (int) random(0, 255);
+  int b = (int) random(0, 255);
+
+int x = (int) random(0,60);
+int y = (int) random(0,60);
+
+
 
 
 
@@ -33,13 +41,8 @@ yPosition = xPosition + 70;
 // For example, “variable1 = variable1 + 2;”. 
 
 // Step 4: Make it so when the program runs the ball slides off the screen exiting at the point (500, 500)
-
-  background(background);
-   fill(150);
-  rect(xPositionRect,yPositionRect,diameterRect,diameterRect);
-  fill(255);
-  ellipse(xPosition,yPosition,diameter,diameter);
- 
+fill(r,g,b);
+ellipse(mouseX + x, mouseY + y,10,10);
 
 
 }
